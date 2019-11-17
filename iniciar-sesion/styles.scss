@@ -1,15 +1,24 @@
 $white: white;
 
+//Clases que heredan comportamiento
+.flex{
+  align-items: center;
+  display: flex;
+}
+//Fin
+
 body {
   margin: 0;
   font-family: 'Muli', sans-serif;
 }
 
 .header {
-  align-items: center;
+  @extend .flex;
+
+  //align-items: center;
   background-color: #21c08b;
   color: $white;
-  display: flex;
+  //display: flex;
   height: 100px;
   justify-content: space-between;
   top: 0px;
@@ -93,7 +102,8 @@ body {
   }
 }
 
-/* Este bloque se anido en la clase padre
+//Este bloque se anido en la clase padre
+/*
 .login__container--register a {
   color: white;
   font-weight: bold;
