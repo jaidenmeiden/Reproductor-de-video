@@ -85,14 +85,22 @@ body {
 
 .login__container--register {
   font-size: 14px;
+  a {
+    color: $white;
+    font-weight: bold;
+    font-size: 16px;
+    text-decoration: none;
+  }
 }
 
+/* Este bloque se anido en la clase padre
 .login__container--register a {
-  color: $white;
+  color: white;
   font-weight: bold;
   font-size: 16px;
   text-decoration: none;
 }
+*/
 
 .login__container--register a:hover {
   text-decoration: underline;
