@@ -1,3 +1,10 @@
+//mixin => Reutilización del código
+@mixin display_align {
+  align-items: center;
+  display: flex;
+}
+//Fin
+
 body {
   margin: 0;
   font-family: 'Muli', sans-serif;
@@ -9,10 +16,9 @@ body {
 }
 
 .header {
-  align-items: center;
+  @include display_align;
   background: #8f57fd;
   color: white;
-  display: flex;
   height: 100px;
   justify-content: space-between;
   top: 0px;
@@ -56,8 +62,7 @@ body {
 }
 
 .header__menu--profile {
-  align-items: center;
-  display: flex;
+  @include display_align;
   cursor: pointer;
 }
 
@@ -67,8 +72,7 @@ body {
 }
 
 .main {
-  display: flex;
-  align-items: center;
+  @include display_align;
   justify-content: center;
   flex-direction: column;
   height: 300px;
@@ -181,9 +185,8 @@ body {
 }
 
 .footer {
-  align-items: center;
+  @include display_align;
   background-color: #8f57fd;
-  display: flex;
   height: 100px;
   width: 100%;
 }
