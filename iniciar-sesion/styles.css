@@ -1,14 +1,17 @@
 @charset "UTF-8";
+.flex, .footer, .login__container--social-media > div, .login, .header {
+  align-items: center;
+  display: flex;
+}
+
 body {
   margin: 0;
   font-family: "Muli", sans-serif;
 }
 
 .header {
-  align-items: center;
   background-color: #21c08b;
   color: white;
-  display: flex;
   height: 100px;
   justify-content: space-between;
   top: 0px;
@@ -22,8 +25,6 @@ body {
 
 .login {
   background-image: linear-gradient(#21c08b, #8f57fd);
-  display: flex;
-  align-items: center;
   flex-direction: column;
   justify-content: center;
   padding: 0px 30px;
@@ -72,8 +73,6 @@ body {
 }
 
 .login__container--social-media > div {
-  align-items: center;
-  display: flex;
   font-size: 14px;
   margin-bottom: 10px;
 }
@@ -86,7 +85,6 @@ body {
 .login__container--register {
   font-size: 14px;
 }
-
 .login__container--register a {
   color: white;
   font-weight: bold;
@@ -99,9 +97,7 @@ body {
 }
 
 .footer {
-  align-items: center;
   background-color: #8f57fd;
-  display: flex;
   height: 100px;
   width: 100%;
 }
@@ -166,4 +162,4 @@ body {
   }
 }
 
-/*# sourceMappingURL=styles.scss.map */
+/*# sourceMappingURL=styles.css.map */

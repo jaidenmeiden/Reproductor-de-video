@@ -10,9 +10,9 @@ body {
 
 .header {
   align-items: center;
+  display: flex;
   background: #8f57fd;
   color: white;
-  display: flex;
   height: 100px;
   justify-content: space-between;
   top: 0px;
@@ -67,8 +67,8 @@ body {
 }
 
 .main {
-  display: flex;
   align-items: center;
+  display: flex;
   justify-content: center;
   flex-direction: column;
   height: 300px;
@@ -182,8 +182,8 @@ body {
 
 .footer {
   align-items: center;
-  background-color: #8f57fd;
   display: flex;
+  background-color: #8f57fd;
   height: 100px;
   width: 100%;
 }
